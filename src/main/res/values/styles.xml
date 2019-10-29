@@ -1,0 +1,631 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- All Screens -->
+        <item name="backgroundColour">@color/white</item>
+        <item name="screenView">@style/Screen.Title.Theme</item>
+        <item name="screenBackgroundColour">@color/blue</item>
+        <item name="screenTextColour">@color/white</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+
+        <!-- Home Screen -->
+        <item name="imageViewSelection">@style/ImageView.Theme</item>
+        <item name="homeScreenButtonTheme">@style/Home.Buttons.Theme</item>
+        <item name="startGameButtonColour">@color/customBlue</item>
+        <item name="startGameButtonText">@string/start_button</item>
+        <item name="instructionsButtonColour">@color/customGreen</item>
+        <item name="instructionsButtonText">@string/instructions_button</item>
+        <item name="recordsButtonColour">@color/customYellow</item>
+        <item name="recordsButtonText">@string/records_button</item>
+        <item name="aboutButtonColour">@color/customPink</item>
+        <item name="aboutButtonText">@string/about_button</item>
+
+        <!-- Settings Screen -->
+        <item name="settingsTitle">@string/settings_title</item>
+        <item name="settingsScreenButtonTheme">@style/Settings.Buttons.Theme</item>
+        <item name="themeButtonColour">@color/blue</item>
+        <item name="theme1Name">@string/theme_1</item>
+        <item name="theme2Name">@string/theme_2</item>
+
+        <!-- Difficulty Settings Screen -->
+        <item name="difficultyTitle">@string/difficulty_title</item>
+        <item name="difficultyScreenButtonTheme">@style/Difficulty.Buttons.Theme</item>
+        <item name="easyButtonColour">@color/customTurquoise</item>
+        <item name="easyButtonText">@string/option_easy</item>
+        <item name="mediumButtonColour">@color/customYellow2</item>
+        <item name="mediumButtonText">@string/option_medium</item>
+        <item name="hardButtonColour">@color/customOrange</item>
+        <item name="hardButtonText">@string/option_hard</item>
+        <item name="veryHardButtonColour">@color/customRed</item>
+        <item name="veryHardButtonText">@string/option_very_hard</item>
+
+        <!-- Instructions Screen -->
+        <item name="instructionsTitle">@string/instructions_title</item>
+        <item name="instructionsTextView1">@style/Instructions.TextView1.Theme</item>
+        <item name="instructionsTextView2">@style/Instructions.TextView2.Theme</item>
+        <item name="instructionsSection1">@string/instructions_section_1</item>
+        <item name="instructionsSection2">@string/instructions_section_2</item>
+        <item name="instructionsSection3">@string/instructions_section_3</item>
+        <item name="instructionsScreenButtonTheme">@style/Instructions.Button.Theme</item>
+
+        <!-- Records Screen -->
+        <item name="recordsTitle">@string/records_title</item>
+        <item name="recordsDifficultyTextView">@style/Records.Difficulty.TextView.Theme</item>
+        <item name="recordsDifficultyTextViewText">@string/table_heading_1</item>
+        <item name="recordsDifficultyTextView2Text">@string/table_heading_2</item>
+        <item name="recordsScoreTextView">@style/Records.Score.TextView.Theme</item>
+        <item name="recordsEasyText">@string/easy_record</item>
+        <item name="recordsMediumText">@string/medium_record</item>
+        <item name="recordsHardText">@string/hard_record</item>
+        <item name="recordsVeryHardText">@string/veryHard_record</item>
+        <item name="recordsScreenButtonTheme">@style/Records.Button.Theme</item>
+        <item name="resetButtonColour">@color/customRed</item>
+        <item name="resetButtonText">@string/reset_button</item>
+
+        <!-- About Screen -->
+        <item name="aboutTitle">@string/about_title</item>
+        <item name="aboutTextView1">@style/About.TextView1.Theme</item>
+        <item name="aboutSection1">@string/about_section_1</item>
+        <item name="aboutTextView2">@style/About.TextView2.Theme</item>
+        <item name="aboutSection2">@string/about_section_2</item>
+        <item name="aboutTextView3">@style/About.TextView3.Theme</item>
+        <item name="aboutSection3">@string/about_section_3</item>
+
+        <!-- Game Screen -->
+        <item name="questionTextView">@style/Game.Question.TextView.Theme</item>
+        <item name="gameScreenButtonTheme">@style/Game.Buttons.Theme</item>
+        <item name="gameOptionsTextColour">@color/white</item>
+        <item name="gameOptionA">@string/option_a</item>
+        <item name="gameOptionB">@string/option_b</item>
+        <item name="gameOptionC">@string/option_c</item>
+        <item name="gameOptionD">@string/option_d</item>
+        <item name="gameDifficultySetting">@style/Game.Difficulty.TextView.Theme</item>
+        <item name="gameScoreTextView">@style/Game.Score.TextView.Theme</item>
+        <item name="gameBestScoreTextView">@style/Game.BestScore.TextView.Theme</item>
+
+        <!-- Game Over Screen -->
+        <item name="gameOverTitle">@string/gameOver_title</item>
+        <item name="gameOverScoreLabel">@style/GameOver.Heading.TextView.Theme</item>
+        <item name="gameOverHighScore">@style/GameOver.HighScore.TextView.Theme</item>
+        <item name="gameOverScore">@style/GameOver.Score.TextView.Theme</item>
+        <item name="gameOverMessage">@style/GameOver.Message.TextView.Theme</item>
+        <item name="gameOverScreenButton1Theme">@style/GameOver.Button1.Theme</item>
+        <item name="gameOverScreenButton2Theme">@style/GameOver.Button2.Theme</item>
+        <item name="playAgainButtonColour">@color/customBlue2</item>
+        <item name="playAgainButtonText">@string/play_again</item>
+        <item name="changeDifficultyButtonColour">@color/customGreen2</item>
+        <item name="changeDifficultyButtonText">@string/change_difficulty</item>
+        <item name="exitApplicationButtonColour">@color/customRed2</item>
+        <item name="exitApplicationButtonText">@string/exit_app</item>
+
+    </style>
+
+    <!-- All Screens -->
+    <style name="Screen.Title.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <!-- Home Screen -->
+    <style name="ImageView.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">384dp</item>
+        <item name="android:layout_height">304dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/general_knowledge_game_icon</item>
+    </style>
+
+    <style name="Home.Buttons.Theme" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">255dp</item>
+        <item name="android:layout_height">59dp</item>
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Settings Screen -->
+    <style name="Settings.Buttons.Theme" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">342dp</item>
+        <item name="android:layout_height">82dp</item>
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:textColor">@drawable/theme_button_text_colours</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <!-- Difficulty Screen -->
+    <style name="Difficulty.Buttons.Theme" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">285dp</item>
+        <item name="android:layout_height">85dp</item>
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <!-- Instructions Screen -->
+    <style name="Instructions.TextView1.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Instructions.TextView2.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:justificationMode">inter_word</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Instructions.Button.Theme" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">139dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@drawable/custom_button</item>
+    </style>
+
+    <!-- Records Screen -->
+    <style name="Records.Difficulty.TextView.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">50sp</item>
+    </style>
+
+    <style name="Records.Score.TextView.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/initialiseScores</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="Records.Button.Theme" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">145dp</item>
+        <item name="android:layout_height">63dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/custom_button</item>
+    </style>
+
+    <!-- About Screen -->
+    <style name="About.TextView1.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="About.TextView2.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:justificationMode">inter_word</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="About.TextView3.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <!-- Game Screen -->
+    <style name="Game.Question.TextView.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:text">@string/question_text</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="Game.Buttons.Theme" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">326dp</item>
+        <item name="android:layout_height">53dp</item>
+        <item name="android:background">@drawable/answer_button</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Game.Difficulty.TextView.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/mode_setting</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Game.Score.TextView.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/score_text</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Game.BestScore.TextView.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/best_score_text</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Game Over Screen -->
+    <style name="GameOver.Heading.TextView.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/final_score_label</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="GameOver.HighScore.TextView.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:text">@string/high_score_text</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="GameOver.Score.TextView.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/final_score</item>
+        <item name="android:textSize">80sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="GameOver.Message.TextView.Theme" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:text">@string/message_text</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="GameOver.Button1.Theme" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">152dp</item>
+        <item name="android:layout_height">59dp</item>
+        <item name="android:background">@drawable/custom_button</item>
+    </style>
+
+    <style name="GameOver.Button2.Theme" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">175dp</item>
+        <item name="android:layout_height">59dp</item>
+        <item name="android:background">@drawable/custom_button</item>
+    </style>
+
+
+    <!--*****************************************************************************************-->
+
+
+    <!-- Theme 2 -->
+    <!-- Base application theme. -->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- All Screens -->
+        <item name="backgroundColour">@color/black</item>
+        <item name="screenView">@style/Screen.Title.Theme2</item>
+        <item name="screenBackgroundColour">@color/red</item>
+        <item name="screenTextColour">@color/white</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+
+        <!-- Home Screen -->
+        <item name="imageViewSelection">@style/ImageView.Theme2</item>
+        <item name="homeScreenButtonTheme">@style/Home.Buttons.Theme2</item>
+        <item name="startGameButtonColour">@color/customRed3</item>
+        <item name="startGameButtonText">@string/start_button</item>
+        <item name="instructionsButtonColour">@color/customBlue3</item>
+        <item name="instructionsButtonText">@string/instructions_button</item>
+        <item name="recordsButtonColour">@color/customYellow3</item>
+        <item name="recordsButtonText">@string/records_button</item>
+        <item name="aboutButtonColour">@color/customGreen3</item>
+        <item name="aboutButtonText">@string/about_button</item>
+
+        <!-- Settings Screen -->
+        <item name="settingsTitle">@string/settings_title</item>
+        <item name="settingsScreenButtonTheme">@style/Settings.Buttons.Theme2</item>
+        <item name="themeButtonColour">@color/red</item>
+        <item name="theme1Name">@string/theme_1</item>
+        <item name="theme2Name">@string/theme_2</item>
+
+        <!-- Difficulty Settings Screen -->
+        <item name="difficultyTitle">@string/difficulty_title</item>
+        <item name="difficultyScreenButtonTheme">@style/Difficulty.Buttons.Theme2</item>
+        <item name="easyButtonColour">@color/customGreen4</item>
+        <item name="easyButtonText">@string/option_easy</item>
+        <item name="mediumButtonColour">@color/customYellow4</item>
+        <item name="mediumButtonText">@string/option_medium</item>
+        <item name="hardButtonColour">@color/customOrange3</item>
+        <item name="hardButtonText">@string/option_hard</item>
+        <item name="veryHardButtonColour">@color/customRed4</item>
+        <item name="veryHardButtonText">@string/option_very_hard</item>
+
+        <!-- Instructions Screen -->
+        <item name="instructionsTitle">@string/instructions_title</item>
+        <item name="instructionsTextView1">@style/Instructions.TextView1.Theme2</item>
+        <item name="instructionsTextView2">@style/Instructions.TextView2.Theme2</item>
+        <item name="instructionsSection1">@string/instructions_section_1</item>
+        <item name="instructionsSection2">@string/instructions_section_2</item>
+        <item name="instructionsSection3">@string/instructions_section_3</item>
+        <item name="instructionsScreenButtonTheme">@style/Instructions.Button.Theme2</item>
+
+        <!-- Records Screen -->
+        <item name="recordsTitle">@string/records_title</item>
+        <item name="recordsDifficultyTextView">@style/Records.Difficulty.TextView.Theme2</item>
+        <item name="recordsDifficultyTextViewText">@string/table_heading_1</item>
+        <item name="recordsDifficultyTextView2Text">@string/table_heading_2</item>
+        <item name="recordsScoreTextView">@style/Records.Score.TextView.Theme2</item>
+        <item name="android:text">@string/initialiseScores</item>
+        <item name="recordsEasyText">@string/easy_record</item>
+        <item name="recordsMediumText">@string/medium_record</item>
+        <item name="recordsHardText">@string/hard_record</item>
+        <item name="recordsVeryHardText">@string/veryHard_record</item>
+        <item name="recordsScreenButtonTheme">@style/Records.Button.Theme2</item>
+        <item name="resetButtonColour">@color/customBlue3</item>
+        <item name="resetButtonText">@string/reset_button</item>
+
+        <!-- About Screen -->
+        <item name="aboutTitle">@string/about_title</item>
+        <item name="aboutTextView1">@style/About.TextView1.Theme2</item>
+        <item name="aboutSection1">@string/about_section_1</item>
+        <item name="aboutTextView2">@style/About.TextView2.Theme2</item>
+        <item name="aboutSection2">@string/about_section_2</item>
+        <item name="aboutTextView3">@style/About.TextView3.Theme2</item>
+        <item name="aboutSection3">@string/about_section_3</item>
+
+        <!-- Game Screen -->
+        <item name="questionTextView">@style/Game.Question.TextView.Theme2</item>
+        <item name="gameScreenButtonTheme">@style/Game.Buttons.Theme2</item>
+        <item name="gameOptionsTextColour">@color/black</item>
+        <item name="gameOptionA">@string/option_a</item>
+        <item name="gameOptionB">@string/option_b</item>
+        <item name="gameOptionC">@string/option_c</item>
+        <item name="gameOptionD">@string/option_d</item>
+        <item name="gameDifficultySetting">@style/Game.Difficulty.TextView.Theme2</item>
+        <item name="gameScoreTextView">@style/Game.Score.TextView.Theme2</item>
+        <item name="gameBestScoreTextView">@style/Game.BestScore.TextView.Theme2</item>
+
+        <!-- Game Over Screen -->
+        <item name="gameOverTitle">@string/gameOver_title</item>
+        <item name="gameOverScoreLabel">@style/GameOver.Heading.TextView.Theme2</item>
+        <item name="gameOverHighScore">@style/GameOver.HighScore.TextView.Theme2</item>
+        <item name="gameOverScore">@style/GameOver.Score.TextView.Theme2</item>
+        <item name="gameOverMessage">@style/GameOver.Message.TextView.Theme2</item>
+        <item name="gameOverScreenButton1Theme">@style/GameOver.Button1.Theme2</item>
+        <item name="gameOverScreenButton2Theme">@style/GameOver.Button2.Theme2</item>
+        <item name="playAgainButtonColour">@color/customPurple</item>
+        <item name="playAgainButtonText">@string/play_again</item>
+        <item name="changeDifficultyButtonColour">@color/customTurquoise2</item>
+        <item name="changeDifficultyButtonText">@string/change_difficulty</item>
+        <item name="exitApplicationButtonColour">@color/customPink2</item>
+        <item name="exitApplicationButtonText">@string/exit_app</item>
+
+    </style>
+
+    <!-- All Screens -->
+    <style name="Screen.Title.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <!-- Home Screen -->
+    <style name="ImageView.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">384dp</item>
+        <item name="android:layout_height">304dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/general_knowledge_game_icon_2</item>
+    </style>
+
+    <style name="Home.Buttons.Theme2" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">255dp</item>
+        <item name="android:layout_height">59dp</item>
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Settings Screen -->
+    <style name="Settings.Buttons.Theme2" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">342dp</item>
+        <item name="android:layout_height">82dp</item>
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:textColor">@drawable/theme_button_text_colours</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <!-- Difficulty Screen -->
+    <style name="Difficulty.Buttons.Theme2" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">285dp</item>
+        <item name="android:layout_height">85dp</item>
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <!-- Instructions Screen -->
+    <style name="Instructions.TextView1.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Instructions.TextView2.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:justificationMode">inter_word</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Instructions.Button.Theme2" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">139dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@drawable/custom_button</item>
+    </style>
+
+    <!-- Records Screen -->
+    <style name="Records.Difficulty.TextView.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">50sp</item>
+    </style>
+
+    <style name="Records.Score.TextView.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="Records.Button.Theme2" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">145dp</item>
+        <item name="android:layout_height">63dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/custom_button</item>
+    </style>
+
+    <!-- About Screen -->
+    <style name="About.TextView1.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="About.TextView2.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:justificationMode">inter_word</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="About.TextView3.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <!-- Game Screen -->
+    <style name="Game.Question.TextView.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">30dp</item>
+        <item name="android:paddingEnd">30dp</item>
+        <item name="android:text">@string/question_text</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="Game.Buttons.Theme2" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">326dp</item>
+        <item name="android:layout_height">53dp</item>
+        <item name="android:background">@drawable/answer_button2</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Game.Difficulty.TextView.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/mode_setting</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Game.Score.TextView.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/score_text</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Game.BestScore.TextView.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/best_score_text</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Game Over Screen -->
+    <style name="GameOver.Heading.TextView.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/final_score_label</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="GameOver.HighScore.TextView.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:text">@string/high_score_text</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/customYellow</item>
+    </style>
+
+    <style name="GameOver.Score.TextView.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/final_score</item>
+        <item name="android:textSize">80sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="GameOver.Message.TextView.Theme2" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:text">@string/message_text</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="GameOver.Button1.Theme2" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">152dp</item>
+        <item name="android:layout_height">59dp</item>
+        <item name="android:background">@drawable/custom_button</item>
+    </style>
+
+    <style name="GameOver.Button2.Theme2" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">175dp</item>
+        <item name="android:layout_height">59dp</item>
+        <item name="android:background">@drawable/custom_button</item>
+    </style>
+
+</resources>

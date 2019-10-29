@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- All Screens -->
+    <string name="app_name">General Knowledge Game</string>
+    <string name="home_button">Home Button</string>
+
+    <!-- Splash Screen -->
+    <string name="startPercentage">0%</string>
+    <string name="percentage_label">Loading Application&#8230;</string>
+    <string name="avatar_image">Avatar Image</string>
+    <string name="game_maker_text">A game by: \n Yashwant Rathor</string>
+    <string name="continue_button_text">Continue</string>
+
+    <!-- Home Screen -->
+    <string name="main_image">Application Image</string>
+    <string name="start_button">Start Game!</string>
+    <string name="instructions_button">Instructions</string>
+    <string name="records_button">Records</string>
+    <string name="about_button">About</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Theme</string>
+    <string name="settings_button">Settings Button</string>
+    <string name="theme_1">Default Theme</string>
+    <string name="theme_2">Dark Theme</string>
+    <string name="theme1ButtonText">Default Theme</string>
+    <string name="theme1ButtonText2">Default Theme\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020</string>
+    <string name="theme2ButtonText">Dark Theme</string>
+    <string name="theme2ButtonText2">Dark Theme\u0020\u0020\u0020\u0020</string>
+
+    <!-- Difficulty Setting Screen -->
+    <string name="difficulty_title">Difficulty</string>
+    <string name="option_easy">Easy</string>
+    <string name="option_medium">Medium</string>
+    <string name="option_hard">Hard</string>
+    <string name="option_very_hard">Very Hard</string>
+
+    <!-- Instructions Screen -->
+    <string name="instructions_title">Instructions</string>
+    <string name="instructions_section_1">Welcome to the General Knowledge Game!</string>
+    <string name="instructions_section_2">Main Instructions</string>
+    <string name="instructions_section_3">Have fun and good luck!</string>
+
+    <!-- Records Screen -->
+    <string name="records_title">Records</string>
+    <string name="table_heading_1">Difficulty</string>
+    <string name="table_heading_2">Score</string>
+    <string name="initialiseScores">0</string>
+    <string name="easy_record">Easy</string>
+    <string name="medium_record">Medium</string>
+    <string name="hard_record">Hard</string>
+    <string name="veryHard_record">Very Hard</string>
+    <string name="reset_button">Reset</string>
+
+    <!-- About Screen -->
+    <string name="about_title">About</string>
+    <string name="about_section_1">Welcome to the General Knowledge Game!</string>
+    <string name="about_section_2">About text</string>
+    <string name="about_section_3">\n\n\u00a9 Copyright General Knowledge Game 2019</string>
+
+    <!-- Game Screen -->
+    <string name="pause_button">Pause Button</string>
+    <string name="question_text">Question</string>
+    <string name="option_a">A</string>
+    <string name="option_b">B</string>
+    <string name="option_c">C</string>
+    <string name="option_d">D</string>
+    <string name="easy_text">EASY</string>
+    <string name="medium_text">MEDIUM</string>
+    <string name="hard_text">HARD</string>
+    <string name="very_hard_text">VERY HARD</string>
+    <string name="mode_setting">Mode</string>
+    <string name="best_score_text">Best: 0</string>
+    <string name="score_text">Score</string>
+
+    <!-- Game Over Screen -->
+    <string name="gameOver_title">Game Over!</string>
+    <string name="final_score_label">Your Final Score:</string>
+    <string name="high_score_text">NEW HIGH SCORE!</string>
+    <string name="final_score">Score</string>
+    <string name="message_text">Message</string>
+    <string name="play_again">Play Again?</string>
+    <string name="change_difficulty">Change Difficulty</string>
+    <string name="exit_app">Exit Application</string>
+
+    <!-- Game Over Controller -->
+    <string name="output_result_1">Outstanding! You got every single question right!</string>
+    <string name="output_result_2">This is an excellent result, well done!</string>
+    <string name="output_result_3">You have a good score, but you could do better!</string>
+    <string name="output_result_4">Not bad, but you need work harder to score higher!</string>
+    <string name="output_result_5">You have a low score, you can do much better!</string>
+    <string name="output_result_6">This is a poor result, you need to study up!</string>
+    <string name="output_result_7">Oh no, you got every single question wrong!</string>
+    <string name="title_activity_settings_screen">Settings</string>
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- All Screens -->
+    <attr name="backgroundColour" format="color" />
+    <attr name="screenView" format="reference" />
+    <attr name="screenBackgroundColour" format="color" />
+    <attr name="screenTextColour" format="color" />
+
+    <!-- Settings Screen -->
+    <attr name="settingsTitle" format="string" />
+    <attr name="settingsScreenButtonTheme" format="reference" />
+    <attr name="themeButtonColour" format="color" />
+    <attr name="theme1Name" format="string" />
+    <attr name="theme2Name" format="string" />
+
+    <!-- Home Screen -->
+    <attr name="imageViewSelection" format="reference" />
+    <attr name="homeScreenButtonTheme" format="reference" />
+    <attr name="startGameButtonColour" format="color" />
+    <attr name="startGameButtonText" format="string" />
+    <attr name="instructionsButtonColour" format="color" />
+    <attr name="instructionsButtonText" format="string" />
+    <attr name="recordsButtonColour" format="color" />
+    <attr name="recordsButtonText" format="string" />
+    <attr name="aboutButtonColour" format="color" />
+    <attr name="aboutButtonText" format="string" />
+
+    <!-- Difficulty Settings Screen -->
+    <attr name="difficultyTitle" format="string" />
+    <attr name="difficultyScreenButtonTheme" format="reference" />
+    <attr name="easyButtonColour" format="color" />
+    <attr name="easyButtonText" format="string" />
+    <attr name="mediumButtonColour" format="color" />
+    <attr name="mediumButtonText" format="string" />
+    <attr name="hardButtonColour" format="color" />
+    <attr name="hardButtonText" format="string" />
+    <attr name="veryHardButtonColour" format="color" />
+    <attr name="veryHardButtonText" format="string" />
+
+    <!-- Instructions Screen -->
+    <attr name="instructionsTitle" format="string" />
+    <attr name="instructionsTextView1" format="reference" />
+    <attr name="instructionsTextView2" format="reference" />
+    <attr name="instructionsSection1" format="string" />
+    <attr name="instructionsSection2" format="string" />
+    <attr name="instructionsSection3" format="string" />
+    <attr name="instructionsScreenButtonTheme" format="reference" />
+
+    <!-- Records Screen -->
+    <attr name="recordsTitle" format="string" />
+    <attr name="recordsDifficultyTextView" format="reference" />
+    <attr name="recordsDifficultyTextViewText" format="reference" />
+    <attr name="recordsDifficultyTextView2Text" format="reference" />
+    <attr name="recordsScoreTextView" format="reference" />
+    <attr name="zeroScore" format="string" />
+    <attr name="recordsEasyText" format="string" />
+    <attr name="recordsMediumText" format="string" />
+    <attr name="recordsHardText" format="string" />
+    <attr name="recordsVeryHardText" format="string" />
+    <attr name="recordsScreenButtonTheme" format="reference" />
+    <attr name="resetButtonColour" format="color" />
+    <attr name="resetButtonText" format="string" />
+
+    <!-- About Screen -->
+    <attr name="aboutTitle" format="string" />
+    <attr name="aboutTextView1" format="reference" />
+    <attr name="aboutTextView2" format="reference" />
+    <attr name="aboutTextView3" format="reference" />
+    <attr name="aboutSection1" format="string" />
+    <attr name="aboutSection2" format="string" />
+    <attr name="aboutSection3" format="string" />
+
+    <!-- Game Screen -->
+    <attr name="questionTextView" format="reference" />
+    <attr name="gameScreenButtonTheme" format="reference" />>
+    <attr name="gameOptionsTextColour" format="color" />
+    <attr name="gameOptionA" format="string" />
+    <attr name="gameOptionB" format="string" />
+    <attr name="gameOptionC" format="string" />
+    <attr name="gameOptionD" format="string" />
+    <attr name="gameDifficultySetting" format="reference" />
+    <attr name="gameBestScoreTextView" format="reference" />
+    <attr name="gameScoreTextView" format="reference" />
+
+    <!-- Game Over Screen -->
+    <attr name="gameOverTitle" format="string" />
+    <attr name="gameOverScoreLabel" format="reference" />
+    <attr name="gameOverHighScore" format="reference" />
+    <attr name="gameOverScore" format="reference" />
+    <attr name="gameOverMessage" format="reference" />
+    <attr name="gameOverScreenButton1Theme" format="reference" />
+    <attr name="gameOverScreenButton2Theme" format="reference" />
+    <attr name="playAgainButtonColour" format="color" />
+    <attr name="playAgainButtonText" format="string" />
+    <attr name="changeDifficultyButtonColour" format="color" />
+    <attr name="changeDifficultyButtonText" format="string" />
+    <attr name="exitApplicationButtonColour" format="color" />
+    <attr name="exitApplicationButtonText" format="string" />
+
+</resources>

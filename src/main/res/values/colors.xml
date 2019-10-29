@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default colours -->
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- Custom colours [Theme 1]-->
+    <!-- All Screens -->
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#0000FF</color>
+
+    <!-- Home Screen -->
+    <color name="customBlue">#96F6FF</color>
+    <color name="customGreen">#96FFAD</color>
+    <color name="customYellow">#FFEA96</color>
+    <color name="customPink">#F2C4C4</color>
+
+    <!-- Difficulty Settings Screen -->
+    <color name="customTurquoise">#96FFC9</color>
+    <color name="customYellow2">#FCFF96</color>
+    <color name="customOrange">#FFC996</color>
+    <color name="customRed">#FF9696</color>
+
+    <!-- Game Screen -->
+    <color name="easyColour">#00FF00</color>
+    <color name="mediumColour">#E4E400</color>
+    <color name="hardColour">#FFA500</color>
+    <color name="veryHardColour">#FF0000</color>
+
+    <!-- Game Over Screen -->
+    <color name="customBlue2">@android:color/holo_blue_light</color>
+    <color name="customGreen2">@android:color/holo_green_light</color>
+    <color name="customRed2">@android:color/holo_red_light</color>
+
+    <!-- Custom colours [Theme 2]-->
+    <!-- All Screens -->
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="customOrange2">#F5C842</color>
+
+    <!-- Home Screen -->
+    <color name="customRed3">#FC0317</color>
+    <color name="customBlue3">#02B6F7</color>
+    <color name="customYellow3">#F7F702</color>
+    <color name="customGreen3">#02F77C</color>
+
+    <!-- Difficulty Settings Screen -->
+    <color name="customGreen4">#15ED8C</color>
+    <color name="customYellow4">#E2ED15</color>
+    <color name="customOrange3">#EDA515</color>
+    <color name="customRed4">#ED3D15</color>
+
+    <!-- Game Over Screen -->
+    <color name="customPurple">#BD4AFF</color>
+    <color name="customTurquoise2">#15E2ED</color>
+    <color name="customPink2">#FF6BF3</color>
+
+</resources>
