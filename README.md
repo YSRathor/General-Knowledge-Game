@@ -8,3 +8,5 @@ An Android Studio project that covers the development of a basic quiz style mobi
 <p>3. Search for "General Knowledge Game" in the search bar.</p>
 <p>4. Click "Get" to allow your device to download and install the application. (Be sure to allow your device to download APKs from the Amazon Appstore).</p>
 <p>5. Open up the General Knowledge Game application and enjoy!</p>
+
+<h5> Support: <a href = "mailto:yashwant.rathor@blueyonder.co.uk?subject = Feedback&body = Message"> Email Contact </a> </h5>
